@@ -1,5 +1,5 @@
 # elite-hat.github.io
 
-Personal Portfolio Website of Elite Hat
+Personal Portfolio Website of **Elite Hat**
 
-A Tech Enthusiast, Front End Developer, & Industry Analyst
+> Tech Enthusiast, Front End Developer, & Industry Analyst.
