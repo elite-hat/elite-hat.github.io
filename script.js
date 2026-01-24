@@ -1,22 +1,9 @@
-/**
- * Portfolio Website - Vanilla JavaScript
- * Handles navigation, scroll animations, form interactions, and smooth scrolling
- */
-
-// ============================================
-// DOM Elements
-// ============================================
-
 const navbar = document.getElementById('navbar');
 const navToggle = document.getElementById('navToggle');
 const navMenu = document.getElementById('navMenu');
 const navLinks = document.querySelectorAll('.nav-link');
 const contactForm = document.getElementById('contactForm');
 const currentYear = document.getElementById('currentYear');
-
-// ============================================
-// Initialize
-// ============================================
 
 document.addEventListener('DOMContentLoaded', () => {
     initNavbar();
