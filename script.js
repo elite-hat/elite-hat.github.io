@@ -14,10 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
     setCurrentYear();
 });
 
-// ============================================
-// Navigation Toggle (Mobile)
-// ============================================
-
 function initNavbar() {
     if (navToggle) {
         navToggle.addEventListener('click', () => {
@@ -25,7 +21,6 @@ function initNavbar() {
             navToggle.classList.toggle('active');
         });
 
-        // Close menu when clicking on a link
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
                 navMenu.classList.remove('active');
@@ -265,7 +260,6 @@ function throttle(func, wait) {
     };
 }
 
-// Apply throttling to scroll-heavy functions
 const throttledNavbarScroll = throttle(() => {
     if (window.pageYOffset > 50) {
         navbar.classList.add('scrolled');
@@ -276,10 +270,6 @@ const throttledNavbarScroll = throttle(() => {
 
 window.addEventListener('scroll', throttledNavbarScroll);
 
-// ============================================
-// Keyboard Navigation Support
-// ============================================
-
 document.addEventListener('keydown', (e) => {
     // Close mobile menu on Escape key
     if (e.key === 'Escape' && navMenu.classList.contains('active')) {
@@ -287,10 +277,6 @@ document.addEventListener('keydown', (e) => {
         navToggle.classList.remove('active');
     }
 });
-
-// ============================================
-// Console Welcome Message (for developers)
-// ============================================
 
 console.log('%c👋 Welcome to Elite Hat\'s Portfolio!', 'color: #2563eb; font-size: 16px; font-weight: bold;');
 console.log('%cBuilt with HTML, CSS, and Vanilla JavaScript', 'color: #64748b; font-size: 12px;');
